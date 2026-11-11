@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reformas El Bosque | Reformas en Madrid</title>
+  <meta name="description" content="Reformas El Bosque: más de 30 años haciendo reformas de cocinas, baños y viviendas en Madrid. Pide tu presupuesto sin compromiso.">
+  <meta name="theme-color" content="#1f3a2e">
+
+  <!-- Tipografías: Fraunces (títulos) y Figtree (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+
+  <!-- Three.js (para la casa 3D). Solo se descarga cuando la sección aparece en pantalla -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <!-- Enlazamos la hoja de estilos (el diseño) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== CABECERA Y MENÚ ========== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__dentro">
+      <a href="#inicio" class="logo" aria-label="Reformas El Bosque, ir al inicio">
+        <svg class="logo__icono" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M3 15 16 4l13 11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 10.5 11 18h3l-3.5 5h11L18 18h3z" fill="currentColor"/>
+          <path d="M16 23v4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__texto">Reformas <strong>El Bosque</strong></span>
+      </a>
+
+      <button class="menu-boton" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto" class="boton boton--pequeno">Pide presupuesto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== INICIO (portada) ========== -->
+    <section id="inicio" class="portada">
+      <div class="contenedor portada__dentro">
+        <div>
+          <p class="etiqueta etiqueta--clara">Reformas integrales · Madrid</p>
+          <h1>Transformamos tu casa con <em>trabajo bien hecho</em></h1>
+          <p class="portada__texto">
+            Cocinas, baños y reformas completas con presupuesto cerrado,
+            plazos claros y un único responsable de principio a fin.
+          </p>
+          <div class="portada__botones">
+            <a href="#contacto" class="boton">Pide tu presupuesto gratis</a>
+            <a href="#servicios" class="boton boton--borde">Ver servicios</a>
+          </div>
+        </div>
+
+        <!-- Sello decorativo -->
+        <svg class="sello" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <path id="sello-circulo" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/>
+          </defs>
+          <circle cx="100" cy="100" r="97" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <text class="sello__aro"><textPath href="#sello-circulo" textLength="470" lengthAdjust="spacing">REFORMAS EL BOSQUE · MADRID · TRABAJO ARTESANAL ·</textPath></text>
+          <text class="sello__numero" x="100" y="110" text-anchor="middle">+30</text>
+          <text class="sello__pie" x="100" y="132" text-anchor="middle">AÑOS</text>
+        </svg>
+
+        <ul class="datos">
+          <li><strong>+30</strong> años de experiencia</li>
+          <li><strong>24 h</strong> atención por WhatsApp</li>
+          <li><strong>Garantía</strong> por escrito</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE NOSOTROS ========== -->
+    <section id="sobre-nosotros" class="seccion">
+      <div class="contenedor dos-columnas">
+        <div class="foto-marco foto-marco--logo">
+          <img src="img/logo-reformas-el-bosque.png" width="580" height="562"
+               alt="Logotipo de Reformas El Bosque, reformas integrales de viviendas">
+        </div>
+
+        <div>
+          <p class="etiqueta">Sobre nosotros</p>
+          <h2>Somos Reformas El Bosque</h2>
+          <p>
+            Llevamos más de 30 años dedicados a las reformas en Madrid. En este tiempo
+            hemos renovado cocinas, baños y viviendas completas, y hemos aprendido que lo
+            más importante es cumplir lo que se promete: precio, plazo y calidad.
+          </p>
+          <p>
+            Nos encargamos personalmente de cada obra: visitamos la vivienda, te damos un
+            presupuesto detallado y coordinamos a todo el equipo para que no tengas
+            que preocuparte de nada.
+          </p>
+          <ul class="lista-check">
+            <li>Presupuesto sin compromiso</li>
+            <li>Plazos de entrega por escrito</li>
+            <li>Obra limpia y ordenada</li>
+          </ul>
+          <p class="firma">El equipo de Reformas El Bosque</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section id="servicios" class="seccion seccion--crema">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="etiqueta">Servicios</p>
+          <h2>¿En qué te podemos ayudar?</h2>
+        </div>
+
+        <!-- ✏️ CAMBIA: añade, borra o edita las tarjetas según lo que ofrezcas -->
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <span class="tarjeta__numero">01</span>
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M3 13h18M8 17h2M14 17h2M8 6.5c0-1 1-1 1-2.5M12 6.5c0-1 1-1 1-2.5M16 6.5c0-1 1-1 1-2.5"/></svg>
+            </div>
+            <h3>Cocinas</h3>
+            <p>Diseño y montaje de cocinas a medida, desde la distribución hasta el último detalle.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="tarjeta__numero">02</span>
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18v2.5A5.5 5.5 0 0 1 15.5 20h-7A5.5 5.5 0 0 1 3 14.5z"/><path d="M6 12V6a2 2 0 0 1 4 0M7 20l-1 2M17 20l1 2"/></svg>
+            </div>
+            <h3>Baños</h3>
+            <p>Cambio de bañera por plato de ducha, alicatado, sanitarios y muebles.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="tarjeta__numero">03</span>
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 9.5V20h14V9.5M10 20v-6h4v6"/></svg>
+            </div>
+            <h3>Reformas integrales</h3>
+            <p>Renovación completa de pisos y casas con un único presupuesto cerrado.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="tarjeta__numero">04</span>
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="15" height="6" rx="1.5"/><path d="M18 6h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-8v3"/><rect x="10.5" y="14" width="3" height="7" rx="1"/></svg>
+            </div>
+            <h3>Pintura y acabados</h3>
+            <p>Pintura, alisado de paredes, pladur, falsos techos y suelos.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="tarjeta__numero">05</span>
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+            </div>
+            <h3>Electricidad y fontanería</h3>
+            <p>Instalaciones nuevas y renovación de las antiguas, con boletín si lo necesitas.</p>
+          </article>
+          <article class="tarjeta">
+            <span class="tarjeta__numero">06</span>
+            <div class="tarjeta__icono">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg>
+            </div>
+            <h3>Pequeñas reparaciones</h3>
+            <p>Arreglos rápidos para que tu casa esté siempre a punto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CASA 3D (diseño conceptual) ========== -->
+    <section id="casa-3d" class="seccion seccion--bosque">
+      <div class="contenedor casa3d">
+        <div class="casa3d__texto">
+          <p class="etiqueta etiqueta--clara">Diseño 3D</p>
+          <h2>Imagina tu próxima casa</h2>
+          <p>
+            Gira la vivienda y toca los puntos para descubrir lo que podemos hacer
+            en cada espacio: cocina, baño, salón y exterior.
+          </p>
+          <p>
+            Tú pones la idea y nosotros nos encargamos de hacerla realidad, con
+            presupuesto cerrado y plazos por escrito.
+          </p>
+          <a href="#contacto" class="boton">Pide presupuesto</a>
+          <p class="casa3d__nota">
+            Diseño conceptual generado por ordenador. No es una obra real de Reformas El Bosque.
+          </p>
+        </div>
+
+        <div class="casa3d__visor" id="casa3d-visor" role="region" aria-label="Modelo 3D interactivo de una vivienda (diseño conceptual)">
+          <div class="casa3d__carga"><span class="casa3d__rueda"></span>Cargando diseño 3D…</div>
+          <p class="casa3d__pista oculta">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M3 12h18"/></svg>
+            Arrastra para girar
+          </p>
+          <div class="casa3d__puntos">
+            <button type="button" class="punto oculto" data-zona="cocina"><span class="punto__marca"></span><span class="punto__texto">Cocina</span></button>
+            <button type="button" class="punto oculto" data-zona="bano"><span class="punto__marca"></span><span class="punto__texto">Baño</span></button>
+            <button type="button" class="punto oculto" data-zona="salon"><span class="punto__marca"></span><span class="punto__texto">Salón</span></button>
+            <button type="button" class="punto oculto" data-zona="exterior"><span class="punto__marca"></span><span class="punto__texto">Exterior</span></button>
+          </div>
+          <div class="casa3d__info" hidden aria-live="polite">
+            <button type="button" class="casa3d__cerrar" aria-label="Cerrar">×</button>
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto" class="seccion">
+      <div class="contenedor contacto">
+        <div class="contacto__panel">
+          <p class="etiqueta etiqueta--clara">Contacto</p>
+          <h2>Cuéntanos tu proyecto</h2>
+          <p>Escríbenos por WhatsApp a cualquier hora o llámanos y te proponemos una visita.</p>
+
+          <ul class="contacto-datos">
+            <li>
+              <span class="contacto-datos__icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.2-4.7A8.5 8.5 0 1 1 21 12z"/></svg></span>
+              <div>
+                <a href="https://wa.me/34607884179" target="_blank" rel="noopener">WhatsApp</a> · asistente 24 h
+                <small>De 00:00 a 6:00 la respuesta puede tardar un poco más.</small>
+              </div>
+            </li>
+            <li>
+              <span class="contacto-datos__icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h3.5l2 5L8 10a11 11 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg></span>
+              <div>
+                <a href="tel:+34607884179">607 884 179</a>
+                <small>De 8:00 a 21:00</small>
+              </div>
+            </li>
+            <li>
+              <span class="contacto-datos__icono"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span>
+              <div><a href="mailto:reformaselbosque@yahoo.es">reformaselbosque@<wbr>yahoo.es</a></div>
+            </li>
+            <li>
+              <span class="contacto-datos__icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <div>Madrid</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulario: al enviar abre WhatsApp con la solicitud ya escrita (ver script.js) -->
+        <form class="formulario" id="formulario" novalidate>
+          <h3 class="formulario__titulo">Pide tu presupuesto</h3>
+          <label>Nombre
+            <input type="text" name="nombre" autocomplete="name" maxlength="80" required>
+          </label>
+          <label>Teléfono o email
+            <input type="text" name="contacto" maxlength="100" required>
+          </label>
+          <label>¿Qué quieres reformar?
+            <select name="tipo">
+              <option>Cocina</option>
+              <option>Baño</option>
+              <option>Reforma integral</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>Mensaje
+            <textarea name="mensaje" rows="4" maxlength="1000" placeholder="Cuéntanos un poco sobre la obra"></textarea>
+          </label>
+          <button type="submit" class="boton boton--ancho boton--icono">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3z"/>
+            </svg>
+            Enviar por WhatsApp
+          </button>
+          <p class="formulario__nota">
+            Al pulsar el botón se abrirá WhatsApp con tu solicitud ya escrita.
+            Solo tienes que darle a enviar.
+          </p>
+          <p class="formulario__aviso" id="aviso" role="status" hidden>
+            ¡Listo! Se ha abierto WhatsApp con tu solicitud. Si no ves la ventana,
+            escríbenos al <a href="https://wa.me/34607884179" target="_blank" rel="noopener">607 884 179</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== PIE DE PÁGINA ========== -->
+  <footer class="pie">
+    <div class="contenedor pie__dentro">
+      <p class="pie__marca">Reformas <strong>El Bosque</strong></p>
+      <p>© <span id="anio"></span> Reformas El Bosque · Madrid · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp (número: 34 + móvil, sin espacios) -->
+  <a href="https://wa.me/34607884179" class="whatsapp" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
+      <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3z"/>
+    </svg>
+  </a>
+
+  <!-- El JavaScript va al final para que la página cargue primero -->
+  <script src="script.js"></script>
+  <script src="casa3d.js"></script>
+</body>
+</html>
